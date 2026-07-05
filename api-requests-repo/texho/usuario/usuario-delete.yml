@@ -1,0 +1,18 @@
+info:
+  name: usuario-delete
+  type: http
+  seq: 4
+
+http:
+  method: DELETE
+  url: "{{HOST}}/v1/usuario/90f3182c-f78e-4fc4-b8e1-c2e4fbfe4b22"
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

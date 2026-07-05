@@ -1,0 +1,22 @@
+info:
+  name: usuario-post
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{HOST}}/v1/usuario"
+  body:
+    type: json
+    data: |-
+      {
+        "email": "mmoreto@msn.com",
+        "senha": "senha123"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
