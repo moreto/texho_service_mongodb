@@ -7,6 +7,7 @@ import { connectDB } from './config/database';
 import { errorHandler } from './middleware/errorHandler';
 import localRoutes from './routes/localRoutes';
 import loginRoutes from './routes/loginRoutes';
+import organizacaoLocalRoutes from './routes/organizacaoLocalRoutes';
 import usuarioRoutes from './routes/usuarioRoutes';
 import { swaggerDocument } from './swagger';
 
@@ -47,6 +48,7 @@ app.get('/health', (_req: Request, res: Response) => {
 app.use(`/api/${API_VERSION}/login`, loginRoutes);
 app.use(`/api/${API_VERSION}/usuario`, usuarioRoutes);
 app.use(`/api/${API_VERSION}/local`, localRoutes);
+app.use(`/api/${API_VERSION}/organizacao-local`, organizacaoLocalRoutes);
 
 // Swagger UI
 app.use(`/api/${API_VERSION}/docs`, swaggerUi.serve, swaggerUi.setup(swaggerDocument));
