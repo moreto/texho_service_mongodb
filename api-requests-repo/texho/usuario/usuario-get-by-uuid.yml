@@ -5,7 +5,7 @@ info:
 
 http:
   method: GET
-  url: "{{HOST}}/v1/usuario/uuid/3641f146-571a-4cd5-b8ee-f2d77edfe95f"
+  url: "{{HOST}}/v1/usuario/uuid/d85e597b-bf62-488d-8291-5616710a9085"
   auth: inherit
 
 settings:
